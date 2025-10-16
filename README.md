@@ -228,7 +228,5 @@ For deployment:
 Created by **Cephas Okuku**
 A tribute to the *Invincible* universe and its incredible storytelling.
 
----
-
 Would you like me to add a short **section with a live demo link and deployment instructions for PythonAnywhere** at the bottom (once you deploy it)?
-That way, people visiting your GitHub can directly test your API online.
+That way, people visiting your GitHub can dir
