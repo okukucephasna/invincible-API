@@ -241,23 +241,154 @@ https://<your-username>.pythonanywhere.com/api/v1/characters
 * Add pagination and caching for scalability
 
 ---
+Perfect 🔥 Cephas — here’s a **GitHub-ready, polished, human-sounding** section that blends naturally with the tone you’ve been using in your Invincible API project README.
+
+You can paste it **directly under** your main description section (e.g. after “About the Project” or “How It Works”).
+
+---
+
+## 🌍 Hosting on PythonAnywhere
+
+This API is hosted live on **[PythonAnywhere](https://www.pythonanywhere.com/)** — a simple and free way to run Python web apps online.
+Below are the exact steps I followed to get it running publicly so anyone can access the data and images.
+
+---
+
+### 🧭 1. Create a PythonAnywhere Account
+
+* Go to [pythonanywhere.com](https://www.pythonanywhere.com/) and create a free account.
+* Once signed in, open your **Dashboard**.
+
+---
+
+### 💻 2. Clone the Project
+
+From your dashboard, open a **Bash console** and run:
+
+```bash
+git clone https://github.com/<your-username>/invincible_api.git
+cd invincible_api
+```
+
+This downloads the repository to your PythonAnywhere home directory.
+
+---
+
+### ⚙️ 3. Install Dependencies
+
+Install all required libraries in your environment:
+
+```bash
+pip install --user -r requirements.txt
+```
+
+This ensures Flask, Flask-RESTful, and any other packages are available.
+
+---
+
+### 🌐 4. Create a New Web App
+
+1. Go to the **Web** tab on PythonAnywhere.
+2. Click **“Add a new web app.”**
+3. Choose **Manual configuration (Flask)** → select **Python 3.10**.
+4. After creation, note the path shown — something like:
+
+   ```
+   /var/www/cephasokuku_pythonanywhere_com_wsgi.py
+   ```
+
+---
+
+### 🧩 5. Configure the WSGI File
+
+* Open the file mentioned above.
+* Replace the Flask section with the following code:
+
+```python
+import os
+import sys
+
+# Path to your project
+project_home = '/home/cephasokuku/invincible_api'
+if project_home not in sys.path:
+    sys.path.insert(0, project_home)
+
+os.chdir(project_home)
+
+# Import the Flask app
+from app import app as application
+```
+
+Click **Save** when done.
+
+---
+
+### 🧱 6. Set Up Static Files
+
+This allows your hosted API to serve images (and any other static files).
+
+In the **Web** tab → scroll down to **Static files**, then click **“Add a new static file mapping.”**
+
+| URL        | Directory                                 |
+| ---------- | ----------------------------------------- |
+| `/static/` | `/home/cephasokuku/invincible_api/static` |
+
+Click **Save**, then **Reload your web app**.
+
+---
+
+### 🚀 7. Test the API
+
+Visit your hosted URL:
+
+```
+https://cephasokuku.pythonanywhere.com/
+```
+
+If everything is set up correctly, you’ll see:
+
+```json
+{"message": "Welcome to Invincible API"}
+```
+
+You can now view data endpoints like:
+
+```
+https://cephasokuku.pythonanywhere.com/api/characters
+```
+
+and access images directly:
+
+```
+https://cephasokuku.pythonanywhere.com/static/images/invincible.png
+```
+
+---
+
+### 🔁 8. Updating the App
+
+Whenever you make changes locally and push them to GitHub, pull the updates into PythonAnywhere:
+
+```bash
+cd ~/invincible_api
+git pull
+```
+
+Then **Reload** the web app from the Web tab.
+
+---
+
+### ✅ That’s It!
+
+Your **Invincible API** is now fully deployed online — serving character data, images, and all the glory of your favorite show 💪🦸‍♂️
+
+---
+
+Would you like me to add a short **“Live Demo”** badge and link snippet (e.g. `[Live API](https://cephasokuku.pythonanywhere.com/)`) that you can place at the top of your README?
 
 ## ❤️ Credits
 
 Created by **Cephas Okuku**
 A tribute to the *Invincible* universe and its incredible storytelling.
 
----
 
-### 🔗 (Optional)
-
-Once you deploy to PythonAnywhere, you can add this at the bottom:
-
-```markdown
-## 🌍 Live Demo
-
-Check out the live version here:  
-👉 [https://cephasokuku.pythonanywhere.com/api/v1/characters](https://cephasokuku.pythonanywhere.com/api/v1/characters)
-```
-
----
