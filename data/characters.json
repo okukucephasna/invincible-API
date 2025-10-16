@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Mark Grayson",
+    "alias": "Invincible",
+    "age": 18,
+    "location": "Earth",
+    "power_level": 9000,
+    "abilities": ["Super strength", "Flight", "Enhanced durability"],
+    "image_url": "/static/images/invincible.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Omni-Man",
+    "alias": "Nolan Grayson",
+    "age": 45,
+    "location": "Viltrum / Earth",
+    "power_level": 12000,
+    "abilities": ["Super strength", "Flight", "Immortality"],
+    "image_url":  "/static/images/omni-man.jpg"},
+  {
+    "id": 3,
+    "name": "Atom Eve",
+    "alias": "Samantha Eve Wilkins",
+    "age": 19,
+    "location": "Earth",
+    "power_level": 8500,
+    "abilities": ["Matter manipulation", "Flight"],
+    "image_url": "/static/images/atom-eve.jpg"
+  }
+]
