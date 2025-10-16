@@ -94,7 +94,7 @@ class CharacterResource(Resource):
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/invincible-api.git
+git clone https://github.com/okukucephasna/invincible-api.git
 cd invincible-api
 ```
 
@@ -266,7 +266,7 @@ Below are the exact steps I followed to get it running publicly so anyone can ac
 From your dashboard, open a **Bash console** and run:
 
 ```bash
-git clone https://github.com/<your-username>/invincible_api.git
+git clone https://github.com/okukucephasna/invincible_api.git
 cd invincible_api
 ```
 
@@ -309,7 +309,7 @@ import os
 import sys
 
 # Path to your project
-project_home = '/home/cephasokuku/invincible_api'
+project_home = '/home/cephasokuku/invincible_api/invincible_api'
 if project_home not in sys.path:
     sys.path.insert(0, project_home)
 
@@ -331,7 +331,7 @@ In the **Web** tab → scroll down to **Static files**, then click **“Add a ne
 
 | URL        | Directory                                 |
 | ---------- | ----------------------------------------- |
-| `/static/` | `/home/cephasokuku/invincible_api/static` |
+| `/static/` | `/home/cephasokuku/invincible_api/invincible_api/static/images` |
 
 Click **Save**, then **Reload your web app**.
 
@@ -360,7 +360,7 @@ https://cephasokuku.pythonanywhere.com/api/characters
 and access images directly:
 
 ```
-https://cephasokuku.pythonanywhere.com/static/images/invincible.png
+https://cephasokuku.pythonanywhere.com/static/images/invincible.jpg
 ```
 
 ---
@@ -381,10 +381,6 @@ Then **Reload** the web app from the Web tab.
 ### ✅ That’s It!
 
 Your **Invincible API** is now fully deployed online — serving character data, images, and all the glory of your favorite show 💪🦸‍♂️
-
----
-
-Would you like me to add a short **“Live Demo”** badge and link snippet (e.g. `[Live API](https://cephasokuku.pythonanywhere.com/)`) that you can place at the top of your README?
 
 ## ❤️ Credits
 
