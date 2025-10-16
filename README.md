@@ -240,13 +240,6 @@ https://<your-username>.pythonanywhere.com/api/v1/characters
 * Include Swagger or Postman API documentation
 * Add pagination and caching for scalability
 
----
-Perfect 🔥 Cephas — here’s a **GitHub-ready, polished, human-sounding** section that blends naturally with the tone you’ve been using in your Invincible API project README.
-
-You can paste it **directly under** your main description section (e.g. after “About the Project” or “How It Works”).
-
----
-
 ## 🌍 Hosting on PythonAnywhere
 
 This API is hosted live on **[PythonAnywhere](https://www.pythonanywhere.com/)** — a simple and free way to run Python web apps online.
